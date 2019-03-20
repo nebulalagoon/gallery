@@ -12,6 +12,8 @@ html {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
   }
   
   #navigation {
@@ -70,15 +72,11 @@ html {
 
   /*mobile portrait*/
   
-  @media only screen and (max-width: 480px) {
-    .background {
-      background-image: url("images/cr_pen_vertical.gif");
-    }
-  
-    #navigation {
-      font-size: 1.2rem;
-    }
+@media only screen and (max-width: 480px) {
+  #navigation {
+    font-size: 1.2rem;
   }
+}
 
 /*images styles*/
 
