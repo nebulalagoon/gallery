@@ -1,0 +1,32 @@
+//imports
+
+@import '../index/css/scss_partials/crocuses_variables';
+@import '../index/css/scss_partials/header&footer';
+@import '../index/css/scss_partials/theme_template';
+
+//gallery images setup
+
+#gallery {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+    img {
+        display: block;
+        width: 300px;
+        height: auto;
+        margin: 10px 5px;
+        flex: 0 1 auto;
+
+    }
+
+    .small {
+        width: 200px;
+        height: auto;
+    }
+
+}
+
