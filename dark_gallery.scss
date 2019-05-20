@@ -1,0 +1,81 @@
+//imports
+
+@import '../index/css/scss_partials/dark_variables';
+@import '../index/css/scss_partials/header&footer';
+@import '../index/css/scss_partials/theme_template';
+
+//gallery images setup
+
+body {
+    overflow-x: hidden;
+}
+
+#gallery {
+    margin: 40px auto;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+
+    img {
+        display: block;
+        width: 400px;
+        height: auto;
+        margin: 12px 8px;
+        flex: 0 1 auto;
+    }
+
+    .small {
+        width: 200px;
+        height: auto;
+    }
+
+}
+
+#navigation {
+    padding-top: 10px;
+ }
+ 
+ footer {
+     padding-top: 5px;
+     padding-bottom: 14px;
+ }
+
+@media only screen and (min-width: 480px) {
+    
+    #navigation {
+        position: fixed;
+        margin-left: 0px;
+        width: 75px;
+        height: 100vh;
+    
+        ul {
+            vertical-align: center;
+            width: 75px;
+            height: 100vh;
+            margin-top: 50%;
+        }
+    
+        li {
+            display: block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10vh;
+        }
+    }
+
+    #gallery {
+        margin-left: 75px;
+    }
+    
+    }
+
+@media only screen and (max-width: 744px) {
+    #gallery img {
+        width: 80%;
+        margin: 12px auto;
+    }
+}
